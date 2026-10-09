@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="808" height="908" viewBox="0 0 808 908" role="img" aria-labelledby="title description">
+<title id="title">Transformer (2017)</title>
+<desc id="description">Six encoder and six decoder layers, with residual addition followed by layer normalisation. The encoder supplies decoder cross-attention keys and values. Token embeddings are summed with sinusoidal positional encodings.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#000"/></marker></defs>
+<rect width="808" height="908" fill="#fff"/>
+<rect x="124" y="384" width="236" height="300" rx="12" fill="#f3f3f4" stroke="#000" stroke-width="1.6"/>
+<text x="136.0" y="404.0" text-anchor="start" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#000">
+<tspan x="136.0" dy="0">Encoder</tspan>
+</text>
+<path d="M 112 384 H 100 V 684 H 112" fill="none" stroke="#000" stroke-width="1.6"/>
+<text x="76.0" y="534.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#000">
+<tspan x="76.0" dy="0">6×</tspan>
+</text>
+<rect x="144" y="608" width="160" height="48" rx="6" fill="#ffe2bb" stroke="#000" stroke-width="1.6"/>
+<text x="224" y="632.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#000">
+<tspan x="224" dy="-9">Multi-Head</tspan>
+<tspan x="224" dy="18">Attention</tspan>
+</text>
+<rect x="144" y="552" width="160" height="28" rx="6" fill="#f2f4c1" stroke="#000" stroke-width="1.6"/>
+<text x="224" y="566.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#000">
+<tspan x="224" dy="0">Add &amp; Norm</tspan>
+</text>
+<rect x="144" y="480" width="160" height="44" rx="6" fill="#c2e8f7" stroke="#000" stroke-width="1.6"/>
+<text x="224" y="502.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#000">
+<tspan x="224" dy="-9">Feed Forward</tspan>
+<tspan x="224" dy="18">(ReLU)</tspan>
+</text>
+<rect x="144" y="424" width="160" height="28" rx="6" fill="#f2f4c1" stroke="#000" stroke-width="1.6"/>
+<text x="224" y="438.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#000">
+<tspan x="224" dy="0">Add &amp; Norm</tspan>
+</text>
+<path d="M 224 608 L 224 580" fill="none" stroke="#000" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 224 670 L 336 670 Q 340 670 340 666 L 340 570 Q 340 566 336 566 L 304 566" fill="none" stroke="#000" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 224 552 L 224 524" fill="none" stroke="#000" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 224 538 L 336 538 Q 340 538 340 534 L 340 442 Q 340 438 336 438 L 304 438" fill="none" stroke="#000" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 224 480 L 224 452" fill="none" stroke="#000" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="484" y="208" width="236" height="476" rx="12" fill="#f3f3f4" stroke="#000" stroke-width="1.6"/>
+<text x="496.0" y="228.0" text-anchor="start" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#000">
+<tspan x="496.0" dy="0">Decoder</tspan>
+</text>
+<path d="M 732 208 H 744 V 684 H 732" fill="none" stroke="#000" stroke-width="1.6"/>
+<text x="768.0" y="446.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#000">
+<tspan x="768.0" dy="0">6×</tspan>
+</text>
+<rect x="504" y="592" width="160" height="64" rx="6" fill="#ffe2bb" stroke="#000" stroke-width="1.6"/>
+<text x="584" y="624.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#000">
+<tspan x="584" dy="-18">Masked</tspan>
+<tspan x="584" dy="18">Multi-Head</tspan>
+<tspan x="584" dy="18">Attention</tspan>
+</text>
+<rect x="504" y="536" width="160" height="28" rx="6" fill="#f2f4c1" stroke="#000" stroke-width="1.6"/>
+<text x="584" y="550.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#000">
+<tspan x="584" dy="0">Add &amp; Norm</tspan>
+</text>
+<rect x="504" y="304" width="160" height="44" rx="6" fill="#c2e8f7" stroke="#000" stroke-width="1.6"/>
+<text x="584" y="326.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#000">
+<tspan x="584" dy="-9">Feed Forward</tspan>
+<tspan x="584" dy="18">(ReLU)</tspan>
+</text>
+<rect x="504" y="248" width="160" height="28" rx="6" fill="#f2f4c1" stroke="#000" stroke-width="1.6"/>
+<text x="584" y="262.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#000">
+<tspan x="584" dy="0">Add &amp; Norm</tspan>
+</text>
+<path d="M 584 592 L 584 564" fill="none" stroke="#000" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 584 670 L 696 670 Q 700 670 700 666 L 700 554 Q 700 550 696 550 L 664 550" fill="none" stroke="#000" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="504" y="432" width="160" height="48" rx="6" fill="#ffe2bb" stroke="#000" stroke-width="1.6"/>
+<text x="584" y="456.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#000">
+<tspan x="584" dy="-9">Multi-Head</tspan>
+<tspan x="584" dy="18">Attention</tspan>
+</text>
+<rect x="504" y="376" width="160" height="28" rx="6" fill="#f2f4c1" stroke="#000" stroke-width="1.6"/>
+<text x="584" y="390.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#000">
+<tspan x="584" dy="0">Add &amp; Norm</tspan>
+</text>
+<path d="M 584 536 L 584 512 Q 584 508 588 508 L 636 508 Q 640 508 640 504 L 640 480" fill="none" stroke="#000" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 584 432 L 584 404" fill="none" stroke="#000" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 584 376 L 584 348" fill="none" stroke="#000" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 584 522 L 696 522 Q 700 522 700 518 L 700 394 Q 700 390 696 390 L 664 390" fill="none" stroke="#000" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 584 362 L 696 362 Q 700 362 700 358 L 700 266 Q 700 262 696 262 L 664 262" fill="none" stroke="#000" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="652" y="494.0" text-anchor="start" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#000">
+<tspan x="652" dy="0">Q</tspan>
+</text>
+<path d="M 584 304 L 584 276" fill="none" stroke="#000" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 224 424 L 224 360 Q 224 356 228 356 L 418 356 Q 422 356 422 360 L 422 504 Q 422 508 426 508 L 572 508 Q 576 508 576 504 L 576 480" fill="none" stroke="#000" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 528 508 L 528 480" fill="none" stroke="#000" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="408" y="420" text-anchor="end" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#000">
+<tspan x="408" dy="0">K, V</tspan>
+</text>
+<circle cx="224" cy="724" r="12" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<path d="M 218 724 L 230 724" fill="none" stroke="#000" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 224 718 L 224 730" fill="none" stroke="#000" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 224 712 L 224 656" fill="none" stroke="#000" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<circle cx="140" cy="724" r="16" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<path d="M 128 724 C 132 710, 136 710, 140 724 S 148 738, 152 724" fill="none" stroke="#000" stroke-width="1.6"/>
+<path d="M 156 724 L 212 724" fill="none" stroke="#000" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="64" y="724" text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#000">
+<tspan x="64" dy="-9">Positional</tspan>
+<tspan x="64" dy="18">Encoding</tspan>
+</text>
+<rect x="144" y="764" width="160" height="44" rx="6" fill="#fce0e1" stroke="#000" stroke-width="1.6"/>
+<text x="224" y="786.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#000">
+<tspan x="224" dy="-9">Input</tspan>
+<tspan x="224" dy="18">Embedding</tspan>
+</text>
+<path d="M 224 764 L 224 736" fill="none" stroke="#000" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 224 836 L 224 808" fill="none" stroke="#000" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="224" y="864" text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#000">
+<tspan x="224" dy="0">Inputs</tspan>
+</text>
+<circle cx="584" cy="724" r="12" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<path d="M 578 724 L 590 724" fill="none" stroke="#000" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 584 718 L 584 730" fill="none" stroke="#000" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 584 712 L 584 656" fill="none" stroke="#000" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<circle cx="668" cy="724" r="16" fill="#fff" stroke="#000" stroke-width="1.6"/>
+<path d="M 656 724 C 660 710, 664 710, 668 724 S 676 738, 680 724" fill="none" stroke="#000" stroke-width="1.6"/>
+<path d="M 652 724 L 596 724" fill="none" stroke="#000" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="744" y="724" text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#000">
+<tspan x="744" dy="-9">Positional</tspan>
+<tspan x="744" dy="18">Encoding</tspan>
+</text>
+<rect x="504" y="764" width="160" height="44" rx="6" fill="#fce0e1" stroke="#000" stroke-width="1.6"/>
+<text x="584" y="786.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#000">
+<tspan x="584" dy="-9">Output</tspan>
+<tspan x="584" dy="18">Embedding</tspan>
+</text>
+<path d="M 584 764 L 584 736" fill="none" stroke="#000" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 584 836 L 584 808" fill="none" stroke="#000" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="584" y="864" text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#000">
+<tspan x="584" dy="-9">Outputs</tspan>
+<tspan x="584" dy="18">(shifted right)</tspan>
+</text>
+<rect x="504" y="152" width="160" height="28" rx="6" fill="#dbdfef" stroke="#000" stroke-width="1.6"/>
+<text x="584" y="166.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#000">
+<tspan x="584" dy="0">Linear</tspan>
+</text>
+<rect x="504" y="96" width="160" height="28" rx="6" fill="#cce7cf" stroke="#000" stroke-width="1.6"/>
+<text x="584" y="110.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#000">
+<tspan x="584" dy="0">Softmax</tspan>
+</text>
+<path d="M 584 248 L 584 180" fill="none" stroke="#000" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 584 152 L 584 124" fill="none" stroke="#000" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 584 96 L 584 68" fill="none" stroke="#000" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="584" y="40" text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#000">
+<tspan x="584" dy="-9">Next output-token</tspan>
+<tspan x="584" dy="18">probabilities</tspan>
+</text>
+</svg>
