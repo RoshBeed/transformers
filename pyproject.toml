@@ -1,0 +1,9 @@
+[project]
+name = "transformer"
+version = "0.1.0"
+description = "Forward pass of the Transformer from Attention Is All You Need, in numpy"
+requires-python = ">=3.13"
+dependencies = ["numpy>=2.1"]
+
+[tool.uv]
+package = false
