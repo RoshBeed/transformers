@@ -178,7 +178,20 @@ def transformer():
 
 
 
+def gpt():
+    d = Diagram(408, 748, "GPT (2018): pre-training",
+                "Twelve causal decoder layers with residual addition followed by layer normalisation. Token and learned position embeddings are summed. A linear vocabulary projection and softmax predict the next token.")
+    decoder = stack(d, 160, 432, "GELU", 12, "Decoder", causal=True)
+    vocabulary_head(d, 160, decoder["top"], decoder["output"], "Next-token probabilities")
+    sum_y = decoder["bottom"] + GAP + SUM_RADIUS
+    d.plus(160, sum_y)
+    d.path([(160, sum_y - SUM_RADIUS), (160, decoder["attention_bottom"])])
+    d.box(308, sum_y - TWO_LINE_HEIGHT / 2, "Learned Position\nEmbedding", "embedding")
+    d.path([(228, sum_y), (172, sum_y)])
+    token_input(d, 160, sum_y)
+    d.save("gpt")
 
 
 if __name__ == "__main__":
     transformer()
+    gpt()

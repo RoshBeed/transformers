@@ -1,7 +1,7 @@
 [project]
 name = "transformer"
 version = "0.1.0"
-description = "NumPy forward passes for the Transformer"
+description = "NumPy forward passes for the Transformer and original GPT"
 requires-python = ">=3.13"
 dependencies = ["numpy>=2.1"]
 
