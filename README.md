@@ -1,11 +1,13 @@
 # transformer
 
-My NumPy implementations of [Transformer][paper] and [GPT][gpt-paper].
+My NumPy implementations of [Transformer][paper], [BERT][bert-paper], and
+[GPT][gpt-paper].
 
 Each script initialises random weights and prints its output probability shapes:
 
 ```shell
 uv run transformer.py
+uv run bert.py
 uv run gpt.py
 ```
 
@@ -27,6 +29,22 @@ def transformer(inputs, outputs_shifted_right=np.array([hp["bos_id"]])):
     return softmax(logits)
 ```
 
+**BERT** pre-training uses masked language modelling and next-sentence prediction:
+
+<img src="docs/figures/bert.svg" alt="BERT architecture with an expanded encoder, residual connections and both pre-training heads" width="707">
+
+```python
+def bert(inputs, segment_ids, masked_positions):
+    x = token_embedding(inputs) + position_embedding(len(inputs)) + segment_embedding(segment_ids)
+    x = layer_norm(x, "embed")
+    x = dropout(x)
+    z = encoder(x)
+
+    masked_probabilities = masked_lm(z[masked_positions])
+    next_sentence_probabilities = next_sentence(z[0])
+    return masked_probabilities, next_sentence_probabilities
+```
+
 **GPT** pre-training uses next-token prediction (causal language modelling):
 
 <img src="docs/figures/gpt.svg" alt="GPT (2018) architecture with a causal decoder, residual connections and next-token prediction head" width="357">
@@ -40,4 +58,5 @@ def gpt(inputs):
 ```
 
 [paper]: https://arxiv.org/abs/1706.03762
+[bert-paper]: https://arxiv.org/abs/1810.04805
 [gpt-paper]: https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
